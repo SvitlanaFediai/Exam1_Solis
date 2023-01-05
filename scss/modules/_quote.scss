@@ -1,0 +1,55 @@
+.quote {
+  margin: 65px 0 120px;
+  padding: 100px 160px;
+  background-image: linear-gradient(rgba(25, 28, 41, 0.84)), url(../images/background.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  /*&::before {
+    content: "\201C";
+    border: 1px solid linear-gradient(90deg, rgba(83, 243, 205, 1), rgba(83, 243, 205, 0));
+  }*/
+
+  @media screen and (min-width: $mobile) and (max-width: $mobile-end) {
+    /*margin-top: 50px;*/
+    padding: 25px 20px;
+    margin: 40px 0 40px;
+  }
+
+  &__image {
+    display: none;
+    position: absolute;
+    /*max-width: 100%;*/
+    width: 105px;
+    height: 85px;
+    /* top: 65px; */
+    /* left: 100px; */
+    top: 16%;
+    left: 8%;
+    /*fill: url(./images/sprite.svg#gradient);*/
+    stroke: url(#gradient);
+
+    @media screen and (min-width: $dekstop) {
+      display: block;
+    }
+  }
+  
+
+  &__text {
+    margin-bottom: 40px;
+    max-width: 710px;
+
+    &::before {
+      content: "\201C";
+      font-size: 7rem;
+      margin: -3rem 0 0 -2.5rem;
+      position: absolute;
+      opacity: 0.8;
+
+      @media screen and (min-width: $dekstop) {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.bg-wrapper {
+  background-image: url(../images/first-screen-image.jpg);
+  background-color: $color-background;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  padding: 30px 0;
+
+  @media screen and (min-width: $dekstop) {
+    min-height: 1030px;
+    background-size: cover;
+    /*height: 42vw; */
+  }
+
+  &--body {
+    background: linear-gradient(180deg, #091221 0%, #161926 100%);
+  }
+}

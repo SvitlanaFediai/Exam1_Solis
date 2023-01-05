@@ -1,0 +1,26 @@
+//fonts
+$primary-text: 'Lato', sans-serif;
+$primary-title: 'Playfair Display', serif;
+
+//colors
+$color-main:              #ffffff;
+$color-black-default:     #161926;
+$color-blue:              #689FF2;
+$color-neon-green:        #53F3CD;
+$color-neon-green-dark:   #02E0AB;
+$color-green:             #85BBB1;
+$color-gray-dark:         #515773;
+$color-background:        #091221;
+
+//breakpoints
+$dekstop: 1360px;
+$tablet-end: $dekstop - 1;
+$tablet-start: 768px;
+$mobile-end: $tablet-start - 1;
+$mobile: 350px;
+
+//font-size
+$default-font-size: 16px;
+
+//width
+$max-width: 1170px;

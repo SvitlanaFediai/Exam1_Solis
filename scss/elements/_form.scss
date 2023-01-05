@@ -1,0 +1,56 @@
+.contact {
+
+  &__form {
+    
+    &-container {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      input,
+      textarea {
+        width: 100%;
+        margin-bottom: 40px;
+        padding: 10px 0;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        outline: none;
+        background: transparent;
+        font-size: 18px;
+
+        color: $color-main;
+        
+      }
+
+      input:focus ~ label,
+      input:valid ~ label,
+      textarea:focus ~ label {
+        top: -20px;
+        left: 0;
+        font-size: 12px;
+
+        color: $color-neon-green-dark;
+        
+      }
+
+      label {
+        position: absolute;
+        top: -10px;
+        left: 0;
+        padding: 10px 0;
+        pointer-events: none;
+        transition: ease-in-out .5s;
+      }
+
+    }
+
+    &-wrapper {
+      display: inline-block;
+    }
+
+    &-button {
+      position: relative; 
+      z-index: 3;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.review {
+  margin-bottom: 100px;
+
+  @media screen and (min-width: $mobile) and (max-width: $mobile-end) {
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+  }
+
+  &__item {
+    position: relative;
+    min-width: 350px;
+  }
+  &__caption {
+    background: linear-gradient(rgba(25, 28, 41, 0.6));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    padding: 30px 40px;
+    height: 100%;
+
+    @media screen and (min-width: $mobile) and (max-width: $mobile-end){
+      justify-content: space-around;
+    }
+  }
+  
+
+  &__image {
+    width: 100%;
+  }
+
+  &__text {
+    max-width: 34%;
+    margin-bottom: 50px;
+
+    @media screen and (min-width: $mobile) and (max-width: $max-width){
+      max-width: 100%;
+    }
+  }
+  
+}
